@@ -1,7 +1,7 @@
 const { Builder, By, Key, util } = require('selenium-webdriver');
 async function searchPage() {
     let driver = await new Builder().forBrowser('chrome').build();
-    await driver.get('https://ibar.az/');
+    await driver.get('https://abb-bank.az/');
     let money = await driver.findElement(By.xpath("//input[@id='js-range-slider-output-0']"))
     money.clear();
     money.sendKeys("7500");
