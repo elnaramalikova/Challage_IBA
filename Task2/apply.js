@@ -1,7 +1,7 @@
 const { Builder, By, Key, util } = require('selenium-webdriver');
 async function applyOnline() {
     let driver = await new Builder().forBrowser('chrome').build();
-    await driver.get('https://ibar.az/');
+    await driver.get('https://abb-bank.az/');
     await driver.sleep(6000);
     await driver.findElement(By.xpath("//a[contains(text(),'Onlayn müraciət et')]")).click();
     await driver.sleep(6000);
